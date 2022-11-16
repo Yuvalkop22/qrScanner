@@ -6,20 +6,49 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-
-    <Button
-        android:id="@+id/btnScan"
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:text="Scan" />
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnScan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Scan" />
+
+        <Button
+            android:id="@+id/send_email_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Send Email" />
+
+        <Button
+            android:id="@+id/save_to_file_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Save to file" />
+
+        <Button
+            android:id="@+id/reset_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Reset" />
+    </LinearLayout>
+
 
     <TextView
         android:id="@+id/txt1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="100dp"
-        android:textSize="20dp"
         android:layout_centerHorizontal="true"
-        android:text="" />
+        android:layout_margin="100dp"
+        android:text=""
+        android:textSize="20dp" />
+
 </RelativeLayout>
